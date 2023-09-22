@@ -1,0 +1,21 @@
+@font-face {
+    font-family: space;
+    src: url(/fonts/LabPulsar-1LGZ.ttf);
+}
+
+body {
+    font-family: space;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: gray;
+}
+
+main {
+    margin: 100px;
+}

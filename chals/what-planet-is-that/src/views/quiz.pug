@@ -1,0 +1,29 @@
+extends default 
+
+block content 
+    div.d-flex.align-items-center
+        div
+            form(id="planetQuiz")
+                p(style="white-space: nowrap") What is this planet?
+                select.form-select(id="quizSelect" aria-label='Planet select dropdown')
+                    option(selected='') Select planet
+                    option(value='mercury') Mercury 
+                    option(value='venus') Venus 
+                    option(value='earth') Earth 
+                    option(value='mars') Mars 
+                    option(value='jupiter') Jupiter 
+                    option(value='saturn') Saturn
+                    option(value='uranus') Uranus 
+                    option(value='neptune') Neptune 
+                br
+                input(type="submit" value="Submit")
+                br
+                br
+                p(id="feedback") Correct: 0/8
+        div
+            img(id="planetImage" src="/images/saturn.png" style="width: 100%")
+
+    script(src='/js/quiz.js')
+
+        
+
