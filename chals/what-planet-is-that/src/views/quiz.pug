@@ -1,8 +1,8 @@
 extends default 
 
 block content 
-    div.d-flex.align-items-center
-        div
+    div.d-flex.align-items-center(id="quizDiv")
+        div(id="formDiv")
             form(id="planetQuiz")
                 p(style="white-space: nowrap") What is this planet?
                 select.form-select(id="quizSelect" aria-label='Planet select dropdown')
@@ -20,7 +20,7 @@ block content
                 br
                 br
                 p(id="feedback") Correct: 0/8
-        div
+        div(id="imageDiv")
             img(id="planetImage" src="/images/saturn.png" style="width: 100%")
 
     script(src='/js/quiz.js')
